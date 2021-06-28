@@ -1,0 +1,12 @@
+2021-06-28 08:45:47.0227 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-06-28 08:45:47.0473 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-06-28 08:46:07.5491 - 12 - CSharpNUnitSpecFlowWebDriver.Reporter.LogTestStepForBugLogger -     INFO: Search for Irvine, CA. 
+2021-06-28 08:46:07.5914 - 12 - CSharpNUnitSpecFlowWebDriver.Reporter.LogTestStepForBugLogger -     INFO: Checking through 3 search results if it matches keyword. 
+2021-06-28 08:46:13.1077 - 12 - CSharpNUnitSpecFlowWebDriver.Reporter.LogTestStepForBugLogger -     INFO: Search results matches keyword. 
+2021-06-28 08:46:17.3950 - 12 - CSharpNUnitSpecFlowWebDriver.Reporter.LogTestStepForBugLogger -     INFO: Filter by 3 baths. 
+2021-06-28 08:46:17.3965 - 12 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.FilterByBath -     INFO: Filter by 3 baths. 
+2021-06-28 08:46:22.4424 - 12 - CSharpNUnitSpecFlowWebDriver.Reporter.LogTestStepForBugLogger -     INFO: Verified it filtered by baths. 
+2021-06-28 08:46:22.4424 - 12 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.VerifyIsFilterByBath -     INFO: Verified it filtered by baths. 
+2021-06-28 08:46:29.8505 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBath("Irvine","CA","3","Browser_Chrome, Browser_Firefox",null) 
+2021-06-28 08:46:29.8505 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-06-28 08:46:29.8505 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
