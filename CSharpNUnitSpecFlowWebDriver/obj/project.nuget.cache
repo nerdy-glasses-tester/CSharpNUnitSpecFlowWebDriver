@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZE3TOw0mafIEy26QbEjkVkSVRLIvzyQ/P8Izu7MJHnt3j/LyF7hagERKcQJDyyzu6jjVlepCncMPILxm6ZBzmQ==",
+  "dgSpecHash": "BxfE1Gudit6HzJbpw0t0o0R8cyP8p9pfwQRg0A+RQ4Y14+cq/eQw05GRsdlrkA/515fSLI9BZn5skkkOfcuFKQ==",
   "success": true,
   "projectFilePath": "C:\\CSharpNUnitSpecFlowWebDriver\\CSharpNUnitSpecFlowWebDriver\\CSharpNUnitSpecFlowWebDriver.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,7 @@
     "C:\\Users\\geeky\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\microsoft.data.sqlclient\\1.0.19249.1\\microsoft.data.sqlclient.1.0.19249.1.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\1.0.3\\microsoft.dotnet.platformabstractions.1.0.3.nupkg.sha512",
+    "C:\\Users\\geeky\\.nuget\\packages\\microsoft.edge.seleniumtools\\3.141.2\\microsoft.edge.seleniumtools.3.141.2.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\microsoft.entityframeworkcore\\3.0.0\\microsoft.entityframeworkcore.3.0.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.0.0\\microsoft.entityframeworkcore.abstractions.3.0.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.0.0\\microsoft.entityframeworkcore.analyzers.3.0.0.nupkg.sha512",

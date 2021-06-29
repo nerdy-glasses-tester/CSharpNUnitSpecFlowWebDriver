@@ -741,6 +741,18 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
+      "Microsoft.Edge.SeleniumTools/3.141.2": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "[3.141.0]"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Edge.SeleniumTools.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Edge.SeleniumTools.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -4699,6 +4711,21 @@
         "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll",
         "microsoft.dotnet.platformabstractions.1.0.3.nupkg.sha512",
         "microsoft.dotnet.platformabstractions.nuspec"
+      ]
+    },
+    "Microsoft.Edge.SeleniumTools/3.141.2": {
+      "sha512": "8wEND69I0C1IBqQ/+niwYAsY+tGZH8aHU2hxXGFbdy96t90TMbuxq9sQFIPbDXn0jB9VERs1otY5iOFRB+1o6g==",
+      "type": "package",
+      "path": "microsoft.edge.seleniumtools/3.141.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Microsoft.Edge.SeleniumTools.dll",
+        "lib/net40/Microsoft.Edge.SeleniumTools.dll",
+        "lib/net45/Microsoft.Edge.SeleniumTools.dll",
+        "lib/netstandard2.0/Microsoft.Edge.SeleniumTools.dll",
+        "microsoft.edge.seleniumtools.3.141.2.nupkg.sha512",
+        "microsoft.edge.seleniumtools.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore/3.0.0": {
@@ -12054,6 +12081,7 @@
       "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "ExtentReports >= 4.1.0",
       "ExtentReports.Core >= 1.0.3",
+      "Microsoft.Edge.SeleniumTools >= 3.141.2",
       "Microsoft.NET.Test.Sdk >= 16.10.0",
       "NLog >= 4.7.10",
       "NLog.Config >= 4.7.10",
@@ -12130,6 +12158,10 @@
           "ExtentReports.Core": {
             "target": "Package",
             "version": "[1.0.3, )"
+          },
+          "Microsoft.Edge.SeleniumTools": {
+            "target": "Package",
+            "version": "[3.141.2, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

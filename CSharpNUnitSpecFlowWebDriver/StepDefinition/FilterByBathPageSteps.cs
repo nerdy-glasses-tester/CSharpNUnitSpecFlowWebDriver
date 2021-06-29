@@ -1,5 +1,4 @@
 ﻿using BoDi;
-using CSharpNUnitSpecFlowWebDriver.PageObject;
 using CSharpNUnitSpecFlowWebDriver.Pages;
 using CSharpNUnitSpecFlowWebDriver.Utilities;
 using Ninject;
@@ -15,6 +14,7 @@ namespace CSharpNUnitSpecFlowWebDriver.StepDefinition
     [Binding, Parallelizable]
     public class FilterByBathPageSteps
     {
+
         HomePageSearch homePageSearch;
         FilterByBathPage filterByBathPage;
 
@@ -24,8 +24,8 @@ namespace CSharpNUnitSpecFlowWebDriver.StepDefinition
             filterByBathPage = new FilterByBathPage();
         }
 
-        [Given(@"I enter (.*) (.*) to search for rentals")]
-        public void GivenIEnterToSearchForRentals(string city, string state)
+        [Given(@"I enter (.*) (.*) to search for rentals in (.*) browser")]
+        public void GivenIEnterToSearchForRentals(string city, string state, string browser)
         {
             string keyword = city + ", " + state;
             SearchResultsPage searchresultspg = homePageSearch.Search(city, state, keyword);
@@ -45,5 +45,7 @@ namespace CSharpNUnitSpecFlowWebDriver.StepDefinition
             bool isFiltered = filterByBathPage.VerifyIsFilterByBath(bath);
             Assert.IsTrue(isFiltered, "Search results are not filtered by bath.");
         }
+
+
     }
 }

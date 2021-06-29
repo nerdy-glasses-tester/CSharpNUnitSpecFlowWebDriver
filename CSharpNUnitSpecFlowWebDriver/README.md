@@ -8,7 +8,7 @@ to a path on your computer to save the reports to
 3. If you are creating your project create in Visual Studio Community Edition a NUnit3 C# project and choose .NET5.0
 4. Install Nuget Packages 
 CQRS,DotNetSeleniumExtras.WaitHelpers, ExtentReports, ExtentReports.Core, Microsoft.Net.Test.SDK, NLOG, NLOG.Config, NLOG.Extensions.Logging,
-NLog.Schema, NLog,Web, NLog.Web.AspNetCore, NUnit, NUnit3TestAdapter, Selenium.WebDriver, Selenium.Support, Selenium.WebDriver.ChromeDriver, Selenium.WebDriver.GeckoDriver,
+NLog.Schema, NLog,Web, NLog.Web.AspNetCore, NUnit, NUnit3TestAdapter, Selenium.WebDriver, Selenium.Support, Microsoft.Edge.SeleniumTool, Selenium.WebDriver.ChromeDriver, Selenium.WebDriver.GeckoDriver,
 SpecFlow and SpecFlow.NUnit
 
 5. Download NLog config from https://www.nuget.org/packages/NLog.config and put this in the config file

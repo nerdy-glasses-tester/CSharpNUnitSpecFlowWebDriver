@@ -5,6 +5,7 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
     public enum BrowserType
     {
         Chrome,
-        Firefox
+        Firefox,
+        Edge
     }
 }

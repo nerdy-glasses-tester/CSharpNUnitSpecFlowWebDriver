@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using BoDi;
-using CSharpNUnitSpecFlowWebDriver.PageObject;
 using CSharpNUnitSpecFlowWebDriver.Utilities;
 using Microsoft.Extensions.Logging;
 using NLog;

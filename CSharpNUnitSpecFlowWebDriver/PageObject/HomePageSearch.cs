@@ -6,7 +6,6 @@ using System.Text;
 using OpenQA.Selenium.Support.UI;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 using System.Threading;
-using CSharpNUnitSpecFlowWebDriver.PageObject;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 using BoDi;

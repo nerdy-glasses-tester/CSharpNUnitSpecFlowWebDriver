@@ -76,26 +76,19 @@ namespace CSharpNUnitSpecFlowWebDriver.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("FilterByBath")]
-        [NUnit.Framework.CategoryAttribute("Browser_Chrome")]
-        [NUnit.Framework.CategoryAttribute("Browser_Firefox")]
-        [NUnit.Framework.TestCaseAttribute("Irvine", "CA", "3", "Browser_Chrome, Browser_Firefox", null)]
-        public virtual void FilterByBath(string city, string state, string bath, string tags, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("Irvine", "CA", "Chrome", "3", null)]
+        [NUnit.Framework.TestCaseAttribute("Irvine", "CA", "Firefox", "3", null)]
+        [NUnit.Framework.TestCaseAttribute("Irvine", "CA", "Edge", "3", null)]
+        public virtual void FilterByBath(string city, string state, string browser, string bath, string[] exampleTags)
         {
-            string[] @__tags = new string[] {
-                    "Browser_Chrome",
-                    "Browser_Firefox"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
+            string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("city", city);
             argumentsOfScenario.Add("state", state);
+            argumentsOfScenario.Add("browser", browser);
             argumentsOfScenario.Add("bath", bath);
-            argumentsOfScenario.Add("Tags", tags);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("FilterByBath", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 7
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -115,13 +108,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 8
- testRunner.Given(string.Format("I enter {0} {1} to search for rentals", city, state), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 6
+ testRunner.Given(string.Format("I enter {0} {1} to search for rentals in {2} browser", city, state, browser), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 9
+#line 7
  testRunner.And(string.Format("I click filter search results by bath and select {0} to filter by", bath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 10
+#line 8
  testRunner.Then(string.Format("I should be able to see search results with at least mininum {0} in the first two" +
                             " search results.", bath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

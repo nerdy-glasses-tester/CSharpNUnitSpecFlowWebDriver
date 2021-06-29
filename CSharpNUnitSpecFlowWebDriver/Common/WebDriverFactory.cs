@@ -6,6 +6,7 @@ using System.Text;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using TechTalk.SpecFlow;
 
@@ -22,6 +23,8 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
                     return GetChromeDriver();
                 case BrowserType.Firefox:
                     return GetFirefoxDriver();
+                case BrowserType.Edge:
+                    return GetEdgeDriver();
                 default:
                     throw new ArgumentOutOfRangeException("No such browser exists.");
             }
@@ -44,8 +47,19 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
             FirefoxDriverService service = FirefoxDriverService.CreateDefaultService();
             service.Host = "::1";
             return new FirefoxDriver(service);
-            //return new FirefoxDriver(path);
         }
+
+        public IWebDriver GetEdgeDriver()
+        {
+            EdgeOptions options = new EdgeOptions();
+            EdgeDriverService service = EdgeDriverService.CreateDefaultService(@"C:\\CSharpNUnitSpecFlowWebDriver\\CSharpNUnitSpecFlowWebDriver\\", @"msedgedriver.exe");
+            service.UseVerboseLogging = true;
+            service.UseSpecCompliantProtocol = true;
+            service.Host = "::1";
+            return new EdgeDriver(service, options);
+
+        }
+
     }
-   }
+ }
 

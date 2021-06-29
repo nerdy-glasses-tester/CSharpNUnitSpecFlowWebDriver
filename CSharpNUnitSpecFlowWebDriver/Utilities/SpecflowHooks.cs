@@ -5,7 +5,6 @@ using NLog;
 using System;
 using System.Threading;
 using System.IO;
-using CSharpNUnitSpecFlowWebDriver.PageObject;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,11 +18,15 @@ using Microsoft.AspNetCore.Hosting;
 using Cqrs.Hosts;
 using Microsoft.Extensions.Logging;
 using System.Collections;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using System.Reflection;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Edge;
 
 namespace CSharpNUnitSpecFlowWebDriver.Utilities
 {
     [Binding, Parallelizable]
-    //[TestFixture]
     public class SpecflowHooks : TechTalk.SpecFlow.Steps
     {
         private static NUnit.Framework.TestContext TestContext { get; set; }
@@ -32,25 +35,29 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
 
         public static IWebDriver driver;
 
-        private static string baseURL = "https://www.xome.com/";
+        public string browser = "";
+
+        public static string baseURL = "https://www.xome.com/";
 
         public static ScenarioContext _scenarioContext;
 
         public static Logger logger = NLogBuilder.ConfigureNLog("NLog.config").GetCurrentClassLogger();
 
+        
         public SpecflowHooks(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
         }
+        
 
         public SpecflowHooks()
         {
         }
 
+        
         [BeforeScenario]
         [SetUp]
-      
-        public IWebDriver SetupBeforeEveryTestMethod()
+        public IWebDriver SetupBeforeEveryTestMethod(ScenarioContext scenarioContext)
             {
                 
                 logger.Info("*************************************** TEST STARTED");
@@ -58,17 +65,20 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
                 Reporter.AddTestCaseMetadataToHtmlReport(TestContext.CurrentContext);
                 var factory = new WebDriverFactory();
 
+                browser = (string)_scenarioContext.ScenarioInfo.Arguments["browser"];
 
-               if (_scenarioContext.ScenarioInfo.Tags.Contains("Browser_Chrome"))
+               if(browser == "Chrome")
                 {
                     driver = factory.Create(BrowserType.Chrome);
                 }
-               
-               if (_scenarioContext.ScenarioInfo.Tags.Contains("Browser_Firefox"))
+                else if(browser == "Firefox")
                 {
                     driver = factory.Create(BrowserType.Firefox);
                 }
-
+                else if (browser == "Edge")
+                {
+                    driver = factory.Create(BrowserType.Edge);
+                }
 
 
                 driver.Navigate().GoToUrl(baseURL);
@@ -101,8 +111,9 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
                     logger.Info("*************************************** TEST STOPPED");
                 }
             }
+        
 
-            public void TakeScreenshotForTestFailure()
+        public void TakeScreenshotForTestFailure()
             {
                 if (ScreenshotTaker != null)
                 {
@@ -115,8 +126,6 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
                 }
             }
 
-            [AfterScenario]
-            [TearDown]
             public void StopBrowser()
             {
                 if (driver == null)
@@ -127,10 +136,11 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
                 logger.Trace("Browser stopped successfully.");
             }
 
-        }
-
 
     }
+
+
+}
 
 
 

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using BoDi;
-using CSharpNUnitSpecFlowWebDriver.PageObject;
 using CSharpNUnitSpecFlowWebDriver.Utilities;
 using NLog;
 using NUnit.Framework;
