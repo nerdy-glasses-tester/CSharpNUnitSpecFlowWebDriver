@@ -10,14 +10,9 @@
     <OutputPath></OutputPath>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="msedgedriver.exe" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FilterByBathPage - Copy.feature.cs" />
-    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FilterByBedPage - Copy.feature.cs" />
-  </ItemGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
 
 
   <ItemGroup>

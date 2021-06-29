@@ -8,6 +8,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Remote;
 using TechTalk.SpecFlow;
 
 namespace CSharpNUnitSpecFlowWebDriver.Utilities
@@ -15,7 +16,7 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
     [Binding, Parallelizable]
     class WebDriverFactory
     {
-        public IWebDriver Create(BrowserType browserType)
+        public RemoteWebDriver Create(BrowserType browserType)
         {
             switch (browserType)
             {
@@ -31,7 +32,7 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
         }
 
 
-        private IWebDriver GetChromeDriver()
+        private RemoteWebDriver GetChromeDriver()
         {
             var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             ChromeOptions option = new ChromeOptions();
@@ -41,7 +42,7 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
         }
 
 
-        private IWebDriver GetFirefoxDriver()
+        private RemoteWebDriver GetFirefoxDriver()
         {
             //var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             FirefoxDriverService service = FirefoxDriverService.CreateDefaultService();
@@ -49,7 +50,7 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
             return new FirefoxDriver(service);
         }
 
-        public IWebDriver GetEdgeDriver()
+        public RemoteWebDriver GetEdgeDriver()
         {
             EdgeOptions options = new EdgeOptions();
             EdgeDriverService service = EdgeDriverService.CreateDefaultService(@"C:\\CSharpNUnitSpecFlowWebDriver\\CSharpNUnitSpecFlowWebDriver\\", @"msedgedriver.exe");

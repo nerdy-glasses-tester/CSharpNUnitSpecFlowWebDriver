@@ -19,7 +19,7 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
 
         public FilterByBedPage()
         {
-            Driver = SpecflowHooks.driver;
+            Driver = SpecflowHooks.driver.Value;
         }
         public WebDriverWait Wait => new WebDriverWait(Driver, System.TimeSpan.FromSeconds(45));
 

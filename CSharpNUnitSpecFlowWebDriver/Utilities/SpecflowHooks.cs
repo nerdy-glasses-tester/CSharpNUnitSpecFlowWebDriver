@@ -23,6 +23,7 @@ using OpenQA.Selenium.Support.UI;
 using System.Reflection;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Remote;
 
 namespace CSharpNUnitSpecFlowWebDriver.Utilities
 {
@@ -33,13 +34,13 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
 
         private static ScreenshotTaker ScreenshotTaker { get; set; }
 
-        public static IWebDriver driver;
+        public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>();
 
         public string browser = "";
 
         public static string baseURL = "https://www.xome.com/";
 
-        public static ScenarioContext _scenarioContext;
+        public ScenarioContext _scenarioContext;
 
         public static Logger logger = NLogBuilder.ConfigureNLog("NLog.config").GetCurrentClassLogger();
 
@@ -67,25 +68,25 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
 
                 browser = (string)_scenarioContext.ScenarioInfo.Arguments["browser"];
 
+            
                if(browser == "Chrome")
                 {
-                    driver = factory.Create(BrowserType.Chrome);
+                    driver.Value = (RemoteWebDriver)factory.Create(BrowserType.Chrome);
                 }
                 else if(browser == "Firefox")
                 {
-                    driver = factory.Create(BrowserType.Firefox);
+                    driver.Value = (RemoteWebDriver)factory.Create(BrowserType.Firefox);
                 }
                 else if (browser == "Edge")
                 {
-                    driver = factory.Create(BrowserType.Edge);
+                    driver.Value = (RemoteWebDriver)factory.Create(BrowserType.Edge);
                 }
 
-
-                driver.Navigate().GoToUrl(baseURL);
-                driver.Manage().Window.Maximize();
+                driver.Value.Navigate().GoToUrl(baseURL);
+                driver.Value.Manage().Window.Maximize();
                 Thread.Sleep(2000);
-                ScreenshotTaker = new ScreenshotTaker(driver, TestContext.CurrentContext);
-                return driver;
+                ScreenshotTaker = new ScreenshotTaker((RemoteWebDriver)driver.Value, TestContext.CurrentContext);
+                return (RemoteWebDriver)driver.Value;
         }
 
             [AfterScenario]
@@ -128,11 +129,11 @@ namespace CSharpNUnitSpecFlowWebDriver.Utilities
 
             public void StopBrowser()
             {
-                if (driver == null)
+                if (driver.Value == null)
                     return;
-                driver.Quit();
-                driver.Dispose();
-                driver = null;
+                driver.Value.Quit();
+                driver.Value.Dispose();
+                driver.Value = null;
                 logger.Trace("Browser stopped successfully.");
             }
 

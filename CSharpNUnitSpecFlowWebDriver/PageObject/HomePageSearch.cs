@@ -20,7 +20,7 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
 
         public HomePageSearch()
         {
-            Driver = SpecflowHooks.driver;
+            Driver = SpecflowHooks.driver.Value;
         }
         public WebDriverWait Wait => new WebDriverWait(Driver, System.TimeSpan.FromSeconds(45));
 
