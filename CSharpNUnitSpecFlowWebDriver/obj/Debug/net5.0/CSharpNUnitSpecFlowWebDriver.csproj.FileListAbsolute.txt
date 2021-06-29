@@ -12,6 +12,12 @@ C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\te
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\msedgedriver.exe
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\NLog.xsd
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\bin\Debug\net5.0\msedgedriver.exe
+C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.deps.json
+C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.runtimeconfig.json
+C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.runtimeconfig.dev.json
+C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.dll
+C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\ref\CSharpNUnitSpecFlowWebDriver.dll
+C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.pdb
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\BoDi.dll
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\Chinchilla.Logging.dll
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\Chinchilla.StateManagement.dll
@@ -151,10 +157,4 @@ C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\obj\Debug\net5.0\CS
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\obj\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.dll
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\obj\Debug\net5.0\ref\CSharpNUnitSpecFlowWebDriver.dll
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\obj\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.pdb
-C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.deps.json
-C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.runtimeconfig.json
-C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.runtimeconfig.dev.json
-C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.dll
-C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\ref\CSharpNUnitSpecFlowWebDriver.dll
-C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.pdb
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\obj\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.genruntimeconfig.cache

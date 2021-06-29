@@ -24,8 +24,8 @@ namespace CSharpNUnitSpecFlowWebDriver.StepDefinition
             filterByBathPage = new FilterByBathPage();
         }
 
-        [Given(@"I enter (.*) (.*) to search for rentals in (.*) browser")]
-        public void GivenIEnterToSearchForRentals(string city, string state, string browser)
+        [Given(@"I enter (.*) (.*) to search for rentals by bath in (.*) browser")]
+        public void GivenIEnterLocationToSearchForRentalsByBathInBrowser(string city, string state, string browser)
         {
             string keyword = city + ", " + state;
             SearchResultsPage searchresultspg = homePageSearch.Search(city, state, keyword);
@@ -38,7 +38,7 @@ namespace CSharpNUnitSpecFlowWebDriver.StepDefinition
             filterByBathPage.FilterByBath(bath);
         }
 
-        [Then(@"I should be able to see search results with at least mininum (.*) in the first two search results\.")]
+        [Then(@"I should be able to see search results with at least mininum (.*) bath in the first two search results")]
         public void ThenIShouldBeAbleToSeeSearchResultsWithAtLeastMininumNumberOfFilteredBathsInTheFirstTwoSearchResults(string bath)
         {
             Thread.Sleep(5000);

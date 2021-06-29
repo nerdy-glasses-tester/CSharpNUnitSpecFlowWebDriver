@@ -20,23 +20,23 @@ namespace CSharpNUnitSpecFlowWebDriver.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("FilterByBathPage")]
-    public partial class FilterByBathPageFeature
+    [NUnit.Framework.DescriptionAttribute("FilterByBedPage")]
+    public partial class FilterByBedPageFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "FilterByBathPage.feature"
+#line 1 "FilterByBedPage.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "FilterByBathPage", "\tTo Filter the search results by number of baths\r\n\tI will search for a location a" +
-                    "nd then click filter by bath and select a number", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "FilterByBedPage", "\tTo Filter the search results by number of beds\r\n\tI will search for a location an" +
+                    "d then click filter by beds and select a number", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,19 +75,19 @@ namespace CSharpNUnitSpecFlowWebDriver.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("FilterByBath")]
+        [NUnit.Framework.DescriptionAttribute("FilterByBed")]
         [NUnit.Framework.TestCaseAttribute("Irvine", "CA", "Chrome", "3", null)]
         [NUnit.Framework.TestCaseAttribute("Irvine", "CA", "Firefox", "3", null)]
         [NUnit.Framework.TestCaseAttribute("Irvine", "CA", "Edge", "3", null)]
-        public virtual void FilterByBath(string city, string state, string browser, string bath, string[] exampleTags)
+        public virtual void FilterByBed(string city, string state, string browser, string bed, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("city", city);
             argumentsOfScenario.Add("state", state);
             argumentsOfScenario.Add("browser", browser);
-            argumentsOfScenario.Add("bath", bath);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("FilterByBath", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            argumentsOfScenario.Add("bed", bed);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("FilterByBed", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -109,14 +109,14 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 6
- testRunner.Given(string.Format("I enter {0} {1} to search for rentals by bath in {2} browser", city, state, browser), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given(string.Format("I enter {0} {1} to search for rentals by bed in {2} browser", city, state, browser), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
- testRunner.And(string.Format("I click filter search results by bath and select {0} to filter by", bath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I click filter search results by bed and select {0} to filter by", bed), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 8
- testRunner.Then(string.Format("I should be able to see search results with at least mininum {0} bath in the firs" +
-                            "t two search results", bath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("I should be able to see search results with at least mininum {0} bed in the first" +
+                            " two search results", bed), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

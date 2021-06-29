@@ -14,6 +14,11 @@
     <None Remove="msedgedriver.exe" />
   </ItemGroup>
 
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FilterByBathPage - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\FilterByBedPage - Copy.feature.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <Content Include="bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.deps.json" />
@@ -139,6 +144,26 @@
 
   <ItemGroup>
     <_DebugSymbolsOutputPath Remove="bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.pdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Features\FilterByPricePage.feature.cs">
+      <DependentUpon>FilterByPricePage.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\FilterByBedPage.feature.cs">
+      <DependentUpon>FilterByBedPage.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\FilterByPricePage.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\FilterByBedPage.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
 
 </Project>
