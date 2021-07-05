@@ -3,7 +3,7 @@ Also big thanks to https://github.com/executeautomation/SeleniumWithSpecflow tea
 C# is similiar to Java. Using www.xome.com as a sample project, I created a Page Object Model based automation framework to run Selenium C# automation tests on Chrome and Firefox. 
 This uses NUnit, NLog, and Extent Reports. As of Jun 7 2021, the test suite has been updated and is passing.
 
-1. In Reporter.CS change  private static string ApplicationDebuggingFolder => "C:\\CSharpNUnitCoreXOME\\CSharpNUnitCoreXOME\\Reports\\CSharpNUnitCoreXOME";
+1. In SpecflowHooks.cs change filePath = Path.GetFullPath("C:\\CSharpNUnitSpecFlowWebDriver\\CSharpNUnitSpecFlowWebDriver\\reports");
 to a path on your computer to save the reports to
 2. Review NLogs at Bin>Debug>net5.0>CSharpNUnitCoreXOME>Logs>Logs.txt folder
 3. If you are creating your project create in Visual Studio Community Edition a NUnit3 C# project and choose .NET5.0
