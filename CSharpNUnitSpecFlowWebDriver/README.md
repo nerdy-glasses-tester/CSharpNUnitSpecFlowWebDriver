@@ -64,6 +64,21 @@ using NUnit.Framework;[assembly: Parallelizable(ParallelScope.Fixtures)], [assem
         </PropertyGroup>
 9.  
         Use public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>(); for parallel testing
+10.     Use ThreadStatic for extent reports fields
+        [ThreadStatic]
+        public readonly IObjectContainer _objectContainer;
+        [ThreadStatic]
+        public readonly FeatureContext _featureContext;
+        [ThreadStatic]
+        public readonly ScenarioContext _scenarioContext;
+        [ThreadStatic]
+        public static ExtentTest featureName;
+        [ThreadStatic]
+        public static ExtentTest scenario;
+      
+        public static ExtentReports extent;
+        public static ExtentKlovReporter klov;
+11.     Use SeleniumGrid see https://medium.com/maestral-solutions/selenium-grid-setup-the-complete-guide-cf000a2be50f 
 
 
 
