@@ -112,11 +112,11 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given(string.Format("I enter {0} {1} to search for rentals by bath in {2} browser", city, state, browser), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
- testRunner.And(string.Format("I click filter search results by bath and select {0} to filter by", bath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When(string.Format("I click filter search results by bath and select {0} to filter by in {1} browser", bath, browser), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
  testRunner.Then(string.Format("I should be able to see search results with at least mininum {0} bath in the firs" +
-                            "t two search results", bath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+                            "t two search results in {1} browser", bath, browser), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

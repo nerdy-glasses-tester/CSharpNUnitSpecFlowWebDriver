@@ -7,6 +7,7 @@ using CSharpNUnitSpecFlowWebDriver.Utilities;
 using NLog;
 using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
@@ -35,8 +36,8 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
         public bool IsLoaded(string pageTitle)
         {
 
-            Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,
-                "Verify search results page title: "+Driver.Title.Trim());
+            //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,
+            //    "Verify search results page title: "+Driver.Title.Trim());
             return Driver.Title.Contains(pageTitle);
 
         }
@@ -52,12 +53,12 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
             if (actualaddress.Equals(keyword))
             {
                 match=true; 
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Specific property search results does match keyword. "+$"Actual => { actualaddress} "+$"Expected => { keyword}");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Specific property search results does match keyword. "+$"Actual => { actualaddress} "+$"Expected => { keyword}");
             }
             else
             {
                 match = false;
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Specific search results does not match keyword. " + $"Actual=>{actualaddress} " + $"Expected=>{keyword}");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Specific search results does not match keyword. " + $"Actual=>{actualaddress} " + $"Expected=>{keyword}");
 
             }
 
@@ -78,7 +79,7 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
             string searchResultsCity = "";
             string searchResultState = "";
 
-            Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Checking through 3 search results if it matches keyword.");
+            //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Checking through 3 search results if it matches keyword.");
 
             for (int i = 0; i<3; i++)
             {
@@ -123,14 +124,14 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
             if (!citymatch || !statematch)
             {
                 match = false;
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,
-                    "Search results does not match keyword.");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,
+                //    "Search results does not match keyword.");
             }
             else
             {
                 match = true;
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,
-                    "Search results matches keyword.");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,
+                //    "Search results matches keyword.");
             }
 
             return match;

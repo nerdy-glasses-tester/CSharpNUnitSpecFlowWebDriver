@@ -1,5 +1,8 @@
-﻿using CSharpNUnitSpecFlowWebDriver.Pages;
+﻿using AventStack.ExtentReports;
+using CSharpNUnitSpecFlowWebDriver.Pages;
+using CSharpNUnitSpecFlowWebDriver.Utilities;
 using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Threading;
 using TechTalk.SpecFlow;
@@ -11,11 +14,13 @@ namespace CSharpNUnitSpecFlowWebDriver.StepDefinition
     {
         HomePageSearch homePageSearch;
         FilterByBedPage filterByBedPage;
+        IWebDriver Driver;
 
         public FilterByBedPageSteps()
         {
             homePageSearch = new HomePageSearch();
             filterByBedPage = new FilterByBedPage();
+            Driver = SpecflowHooks.driver.Value;
         }
 
         [Given(@"I enter (.*) (.*) to search for rentals by bed in (.*) browser")]
@@ -26,18 +31,26 @@ namespace CSharpNUnitSpecFlowWebDriver.StepDefinition
             Assert.IsTrue(searchresultspg.CheckSearchResultsMatchKeyword(keyword), "Search results did not match keyword.");
         }
 
-        [Given(@"I click filter search results by bed and select (.*) to filter by")]
-        public void GivenIClickFilterSearchResultsByBedAndSelectToFilterBy(string bed)
+        [When(@"I click filter search results by bed and select (.*) to filter by in (.*) browser")]
+        public void WhenIClickFilterSearchResultsByBedAndSelectToFilterByInBrowser(string bed, string browser)
         {
             filterByBedPage.FilterByBed(bed);
         }
 
-        [Then(@"I should be able to see search results with at least mininum (.*) bed in the first two search results")]
-        public void ThenIShouldBeAbleToSeeSearchResultsWithAtLeastMininumNumberOfFilteredBathsInTheFirstTwoSearchResults(string bed)
+        [Then(@"I should be able to see search results with at least mininum (.*) bed in the first two search results in (.*) browser")]
+        public void ThenIShouldBeAbleToSeeSearchResultsWithAtLeastMininumNumberOfFilteredBathsInTheFirstTwoSearchResultsInBrowser(string bed, string browser)
         {
             Thread.Sleep(5000);
             bool isFiltered = filterByBedPage.VerifyIsFilterByBed(bed);
-            Assert.IsTrue(isFiltered, "Search results are not filtered by bed.");
+
+            try
+            {
+                Assert.IsTrue(isFiltered, "Search results are not filtered by bed.");
+            }
+            catch (Exception e)
+            {
+                SpecflowHooks.scenario.Log(Status.Fail, "Search results are not filtered by bath.");
+            }
         }
 
 

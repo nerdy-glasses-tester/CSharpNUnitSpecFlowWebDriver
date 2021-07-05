@@ -1,16 +1,19 @@
 ﻿using System;
+using System.IO;
+using CSharpNUnitSpecFlowWebDriver.Utilities;
 using NLog;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 
 namespace CSharpNUnitSpecFlowWebDriver
 {
     public class ScreenshotTaker
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
-        private readonly IWebDriver _driver;
+        private readonly RemoteWebDriver _driver;
         private readonly NUnit.Framework.TestContext _testContext;
 
-        public ScreenshotTaker(IWebDriver driver, NUnit.Framework.TestContext testContext)
+        public ScreenshotTaker(RemoteWebDriver driver, NUnit.Framework.TestContext testContext)
         {
             if (driver == null)
                 return;
@@ -24,9 +27,11 @@ namespace CSharpNUnitSpecFlowWebDriver
 
         public void CreateScreenshotIfTestFailed()
         {
-            if (_testContext.Result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Failed ||
-                _testContext.Result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Inconclusive)
+            if (_testContext.Result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Failed)
                 TakeScreenshotForFailure();
+
+            if (_testContext.Result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Inconclusive)
+                TakeScreenshotForInconclusive();
         }
 
         public string TakeScreenshot(string screenshotFileName)
@@ -39,7 +44,7 @@ namespace CSharpNUnitSpecFlowWebDriver
 
         public bool TakeScreenshotForFailure()
         {
-            ScreenshotFileName = $"FAIL_{ScreenshotFileName}";
+            ScreenshotFileName = $"{ScreenshotFileName}";
 
             var ss = GetScreenshot();
             var successfullySaved = TryToSaveScreenshot(ScreenshotFileName, ss);
@@ -47,6 +52,19 @@ namespace CSharpNUnitSpecFlowWebDriver
                 Logger.Error($"Screenshot Of Error=>{ScreenshotFilePath}");
             return successfullySaved;
         }
+
+        
+        public bool TakeScreenshotForInconclusive()
+        {
+            ScreenshotFileName = $"{ScreenshotFileName}";
+
+            var ss = GetScreenshot();
+            var successfullySaved = TryToSaveScreenshot(ScreenshotFileName, ss);
+            if (successfullySaved)
+                Logger.Error($"Screenshot Of Error=>{ScreenshotFilePath}");
+            return successfullySaved;
+        }
+        
 
         private Screenshot GetScreenshot()
         {
@@ -73,9 +91,15 @@ namespace CSharpNUnitSpecFlowWebDriver
         {
             if (ss == null)
                 return;
-            ScreenshotFilePath = $"{Reporter.LatestResultsReportFolder}\\{screenshotName}.jpg";
+            //var filePath = Path.GetFullPath("C:\\CSharpNUnitSpecFlowWebDriver\\CSharpNUnitSpecFlowWebDriver\\reports");
+            //var LatestResultsReportFolder = Path.Combine(filePath, DateTime.Now.ToString("MMdd_HHmm"));
+            var reportfolder = SpecflowHooks.LatestResultsReportFolder;
+            ScreenshotFilePath = $"{reportfolder}\\{screenshotName}.jpg";
+
             ScreenshotFilePath = ScreenshotFilePath.Replace('/', ' ').Replace('"', ' ');
             ss.SaveAsFile(ScreenshotFilePath, ScreenshotImageFormat.Png);
         }
+
+
     }
 }

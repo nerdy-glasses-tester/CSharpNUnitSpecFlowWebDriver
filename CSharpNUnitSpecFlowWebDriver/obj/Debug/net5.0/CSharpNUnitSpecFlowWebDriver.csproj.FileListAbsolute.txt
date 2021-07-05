@@ -11,7 +11,6 @@ C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\nu
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\testcentric.engine.metadata.dll
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\msedgedriver.exe
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\NLog.xsd
-C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\bin\Debug\net5.0\msedgedriver.exe
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.deps.json
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.runtimeconfig.json
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.runtimeconfig.dev.json
@@ -57,7 +56,6 @@ C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\Ne
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\Ninject.dll
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\NLog.dll
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\NLog.Extensions.Logging.dll
-C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\NLog.Web.dll
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\NuGet.Frameworks.dll
 C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\bin\Debug\net5.0\nunit.framework.dll

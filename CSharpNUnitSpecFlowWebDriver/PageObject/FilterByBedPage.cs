@@ -6,6 +6,7 @@ using CSharpNUnitSpecFlowWebDriver.Utilities;
 using NLog;
 using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
@@ -38,10 +39,10 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
             FilterBedMenu.Click();
             int bedstofilter = int.Parse(bed);
             BedsDrpDownSelections[bedstofilter].Click();
-            Thread.Sleep(3000); //Wait for page to load
+            Thread.Sleep(6000); //Wait for page to load
 
-            Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,
-                "Filter by " + $"{bed} beds.");
+            //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,
+            //    "Filter by " + $"{bed} beds.");
         }
 
         public bool VerifyIsFilterByBed(string bed)
@@ -55,12 +56,12 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
             if ((result1 >= numofbed) && (result2 >= numofbed))
             {
                 isFiltered = true;
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,"Verified it filtered by beds.");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,"Verified it filtered by beds.");
             }
             else
             {
                 isFiltered = false;
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,"Failed to filter by beds.");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,"Failed to filter by beds.");
             }
 
             return isFiltered;

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BxfE1Gudit6HzJbpw0t0o0R8cyP8p9pfwQRg0A+RQ4Y14+cq/eQw05GRsdlrkA/515fSLI9BZn5skkkOfcuFKQ==",
+  "dgSpecHash": "QYkkz2IMVnjeKkFP4Z2iClgwmrkOqTeA+Cvuu+drWAzvJTfrBwpMTT54Hn4+hNEeQTvUc+0BhPEZM5ob7kM5ug==",
   "success": true,
   "projectFilePath": "C:\\CSharpNUnitSpecFlowWebDriver\\CSharpNUnitSpecFlowWebDriver\\CSharpNUnitSpecFlowWebDriver.csproj",
   "expectedPackageFiles": [
@@ -105,7 +105,6 @@
     "C:\\Users\\geeky\\.nuget\\packages\\nlog.config\\4.7.10\\nlog.config.4.7.10.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\nlog.extensions.logging\\1.7.3\\nlog.extensions.logging.1.7.3.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\nlog.schema\\4.7.10\\nlog.schema.4.7.10.nupkg.sha512",
-    "C:\\Users\\geeky\\.nuget\\packages\\nlog.web\\4.12.0\\nlog.web.4.12.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\nlog.web.aspnetcore\\4.12.0\\nlog.web.aspnetcore.4.12.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
@@ -232,7 +231,7 @@
     "C:\\Users\\geeky\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\geeky\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\Users\\geeky\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\system.threading.tasks.parallel\\4.3.0\\system.threading.tasks.parallel.4.3.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
@@ -245,16 +244,5 @@
     "C:\\Users\\geeky\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\geeky\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NLog.Web 4.12.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
-      "libraryId": "NLog.Web",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

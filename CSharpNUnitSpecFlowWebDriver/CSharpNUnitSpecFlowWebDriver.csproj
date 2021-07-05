@@ -14,6 +14,14 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Reports\CSharpNUnitSpecFlowWebDriver\**" />
+    <EmbeddedResource Remove="Reports\CSharpNUnitSpecFlowWebDriver\**" />
+    <None Remove="Reports\CSharpNUnitSpecFlowWebDriver\**" />
+    <SpecFlowFeatureFiles Remove="Reports\CSharpNUnitSpecFlowWebDriver\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Reports\CSharpNUnitSpecFlowWebDriver\**" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <Content Include="bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.deps.json" />
@@ -42,7 +50,6 @@
     <PackageReference Include="NLog.Config" Version="4.7.10" />
     <PackageReference Include="NLog.Extensions.Logging" Version="1.7.3" />
     <PackageReference Include="NLog.Schema" Version="4.7.10" />
-    <PackageReference Include="NLog.Web" Version="4.12.0" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.12.0" />
     <PackageReference Include="NUnit" Version="3.13.2" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
@@ -53,88 +60,11 @@
     <PackageReference Include="Selenium.WebDriver.GeckoDriver" Version="0.29.1" />
     <PackageReference Include="SpecFlow" Version="3.9.8" />
     <PackageReference Include="SpecFlow.NUnit" Version="3.9.8" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Reports\CSharpNUnitSpecFlowWebDriver\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="bin\Debug\net5.0\BoDi.dll" />
-    <None Include="bin\Debug\net5.0\Chinchilla.Logging.dll" />
-    <None Include="bin\Debug\net5.0\Chinchilla.StateManagement.dll" />
-    <None Include="bin\Debug\net5.0\chromedriver.exe" />
-    <None Include="bin\Debug\net5.0\Cqrs.dll" />
-    <None Include="bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.dll" />
-    <None Include="bin\Debug\net5.0\CSharpNUnitSpecFlowWebDriver.pdb" />
-    <None Include="bin\Debug\net5.0\Cucumber.Messages.dll" />
-    <None Include="bin\Debug\net5.0\DnsClient.dll" />
-    <None Include="bin\Debug\net5.0\ExtentReports.dll" />
-    <None Include="bin\Debug\net5.0\geckodriver.exe" />
-    <None Include="bin\Debug\net5.0\Gherkin.dll" />
-    <None Include="bin\Debug\net5.0\Google.Protobuf.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Server.Kestrel.Https.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.CodeAnalysis.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.Data.SqlClient.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.Identity.Client.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.TestPlatform.CommunicationUtilities.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.TestPlatform.CoreUtilities.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.TestPlatform.CrossPlatEngine.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.TestPlatform.Utilities.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.Common.dll" />
-    <None Include="bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" />
-    <None Include="bin\Debug\net5.0\MongoDB.Bson.dll" />
-    <None Include="bin\Debug\net5.0\MongoDB.Driver.Core.dll" />
-    <None Include="bin\Debug\net5.0\MongoDB.Driver.dll" />
-    <None Include="bin\Debug\net5.0\MongoDB.Libmongocrypt.dll" />
-    <Content Include="bin\Debug\net5.0\msedgedriver.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="bin\Debug\net5.0\Newtonsoft.Json.dll" />
-    <None Include="bin\Debug\net5.0\Ninject.dll" />
-    <None Include="bin\Debug\net5.0\NLog.config" />
-    <None Include="bin\Debug\net5.0\NLog.dll" />
-    <None Include="bin\Debug\net5.0\NLog.Extensions.Logging.dll" />
-    <None Include="bin\Debug\net5.0\NLog.Web.AspNetCore.dll" />
-    <None Include="bin\Debug\net5.0\NLog.Web.dll" />
-    <None Include="bin\Debug\net5.0\NLog.xsd" />
-    <None Include="bin\Debug\net5.0\NuGet.Frameworks.dll" />
-    <None Include="bin\Debug\net5.0\nunit.engine.api.dll" />
-    <None Include="bin\Debug\net5.0\nunit.engine.core.dll" />
-    <None Include="bin\Debug\net5.0\nunit.engine.dll" />
-    <None Include="bin\Debug\net5.0\nunit.framework.dll" />
-    <None Include="bin\Debug\net5.0\NUnit3.TestAdapter.dll" />
-    <None Include="bin\Debug\net5.0\NUnit3.TestAdapter.pdb" />
-    <None Include="bin\Debug\net5.0\nunit_random_seed.tmp" />
-    <None Include="bin\Debug\net5.0\RazorEngine.NetCore.dll" />
-    <None Include="bin\Debug\net5.0\SeleniumExtras.WaitHelpers.dll" />
-    <None Include="bin\Debug\net5.0\SharpCompress.dll" />
-    <None Include="bin\Debug\net5.0\SpecFlow.Internal.Json.dll" />
-    <None Include="bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll" />
-    <None Include="bin\Debug\net5.0\System.Data.SqlClient.dll" />
-    <None Include="bin\Debug\net5.0\System.Private.ServiceModel.dll" />
-    <None Include="bin\Debug\net5.0\System.Runtime.Caching.dll" />
-    <None Include="bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll" />
-    <None Include="bin\Debug\net5.0\System.ServiceModel.dll" />
-    <None Include="bin\Debug\net5.0\System.ServiceModel.Primitives.dll" />
-    <None Include="bin\Debug\net5.0\TechTalk.SpecFlow.dll" />
-    <None Include="bin\Debug\net5.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll" />
-    <None Include="bin\Debug\net5.0\testcentric.engine.metadata.dll" />
-    <None Include="bin\Debug\net5.0\testhost.dll" />
-    <None Include="bin\Debug\net5.0\testhost.exe" />
-    <None Include="bin\Debug\net5.0\WebDriver.dll" />
-    <None Include="bin\Debug\net5.0\WebDriver.Support.dll" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+    <PackageReference Include="System.Threading.Thread" Version="4.3.0" />
+    <PackageReference Include="System.Threading.ThreadPool" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -142,23 +72,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Features\FilterByPricePage.feature.cs">
-      <DependentUpon>FilterByPricePage.feature</DependentUpon>
-    </Compile>
-    <Compile Update="Features\FilterByBedPage.feature.cs">
-      <DependentUpon>FilterByBedPage.feature</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <SpecFlowFeatureFiles Update="Features\FilterByPricePage.feature">
-      <Visible>$(UsingMicrosoftNETSdk)</Visible>
-      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
-    </SpecFlowFeatureFiles>
-    <SpecFlowFeatureFiles Update="Features\FilterByBedPage.feature">
-      <Visible>$(UsingMicrosoftNETSdk)</Visible>
-      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
-    </SpecFlowFeatureFiles>
+    <Folder Include="Reports\" />
   </ItemGroup>
 
 </Project>

@@ -4,13 +4,10 @@
 
 Scenario Outline: FilterByBed
 	Given I enter <city> <state> to search for rentals by bed in <browser> browser
-	And I click filter search results by bed and select <bed> to filter by
-	Then I should be able to see search results with at least mininum <bed> bed in the first two search results
+	When I click filter search results by bed and select <bed> to filter by in <browser> browser
+	Then I should be able to see search results with at least mininum <bed> bed in the first two search results in <browser> browser
 Examples:
 | city   | state | browser | bed  |
 | Irvine | CA    | Chrome  | 3    |
 | Irvine | CA    | Firefox | 3    |
 | Irvine | CA    | Edge	   | 3    |
-
-
-

@@ -113,10 +113,12 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given(string.Format("I enter {0} {1} to search for rentals by price in {2} browser", city, state, browser), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
- testRunner.And(string.Format("I click filter search results by price and select {0} and {1} to filter by", minprice, maxprice), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When(string.Format("I click filter search results by price and select {0} and {1} to filter by in {2}" +
+                            " browser", minprice, maxprice, browser), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
- testRunner.Then(string.Format("I should be able to see search results between {0} and {1} in the first result", minprice, maxprice), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("I should be able to see search results between {0} and {1} in the first result in" +
+                            " {2} browser", minprice, maxprice, browser), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

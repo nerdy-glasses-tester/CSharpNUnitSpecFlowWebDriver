@@ -8,6 +8,7 @@ using NLog;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
@@ -15,7 +16,7 @@ using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 namespace CSharpNUnitSpecFlowWebDriver.Pages
 {
     [Binding, Parallelizable]
-    public class FilterByPricePage 
+    public class FilterByPricePage
     {
         IWebDriver Driver;
 
@@ -41,10 +42,10 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
             FilterMaxPrice.SendKeys(maxprice);
             Thread.Sleep(1000); //Need wait before click to process correctly
             FilterPriceMenu.Click();
-            Thread.Sleep(3000); //Need wait to load page
+            Thread.Sleep(6000); //Need wait to load page
 
-            Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,
-                "Filter by price range " + $"{minprice} - " + $"{maxprice}.");
+            //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,
+            //    "Filter by price range " + $"{minprice} - " + $"{maxprice}.");
 
         }
 
@@ -61,12 +62,12 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
             if(result>=min && result<=max)
             {
                 isFiltered = true;
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,"Verified it filtered by price range.");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,"Verified it filtered by price range.");
             }
             else
             {
                 isFiltered = false;
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,"Failed to filter by price range.");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info,"Failed to filter by price range.");
             }
 
             return isFiltered;

@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using NLog;
 using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
@@ -42,8 +43,8 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
         {
             BathFilter.Click();
             BathFilterSelection[int.Parse(bath)].Click();
-            Thread.Sleep(3000); //Wait for page to load
-            Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Filter by " + $"{bath} baths.");
+            Thread.Sleep(6000); //Wait for page to load
+            //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Filter by " + $"{bath} baths.");
             logger.Info("Filter by " + $"{bath} baths.");
         }
 
@@ -58,13 +59,13 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
             if((result1 >= numofbaths) && (result2 >= numofbaths))
             {
                 isFiltered = true;
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Verified it filtered by baths.");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Verified it filtered by baths.");
                 logger.Info("Verified it filtered by baths.");
             }
             else
             {
                 isFiltered = false;
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Failed to filter by baths.");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Failed to filter by baths.");
                 logger.Info("Failed to filter by baths.");
             }
 

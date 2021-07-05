@@ -1672,15 +1672,6 @@
           }
         }
       },
-      "NLog.Web/4.12.0": {
-        "type": "package",
-        "compile": {
-          "lib/net35/NLog.Web.dll": {}
-        },
-        "runtime": {
-          "lib/net35/NLog.Web.dll": {}
-        }
-      },
       "NLog.Web.AspNetCore/4.12.0": {
         "type": "package",
         "dependencies": {
@@ -3644,7 +3635,7 @@
           "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Threading.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Threading.dll": {}
@@ -3661,7 +3652,7 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.2": {
+      "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -3708,7 +3699,7 @@
           "System.Runtime.Handles": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Threading.ThreadPool.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
@@ -6227,21 +6218,6 @@
         "contentFiles/any/any/NLog.xsd",
         "nlog.schema.4.7.10.nupkg.sha512",
         "nlog.schema.nuspec"
-      ]
-    },
-    "NLog.Web/4.12.0": {
-      "sha512": "U4iRyJxmBtpUaPeoIEaehcT7CfeDzIRSr/y2YuVjREyc9/QzE21fW9cIZnsPHvf7Ys9OrlxsHcii2XBYYSxTQg==",
-      "type": "package",
-      "path": "nlog.web/4.12.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "N.png",
-        "lib/net35/NLog.Web.dll",
-        "lib/net35/NLog.Web.xml",
-        "nlog.web.4.12.0.nupkg.sha512",
-        "nlog.web.nuspec",
-        "readme.txt"
       ]
     },
     "NLog.Web.AspNetCore/4.12.0": {
@@ -11533,10 +11509,10 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "System.Threading.Tasks.Extensions/4.5.2": {
-      "sha512": "BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.2",
+      "path": "system.threading.tasks.extensions/4.5.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11544,6 +11520,8 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
         "lib/netcoreapp2.1/_._",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
@@ -11562,7 +11540,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
         "system.threading.tasks.extensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -12087,7 +12065,6 @@
       "NLog.Config >= 4.7.10",
       "NLog.Extensions.Logging >= 1.7.3",
       "NLog.Schema >= 4.7.10",
-      "NLog.Web >= 4.12.0",
       "NLog.Web.AspNetCore >= 4.12.0",
       "NUnit >= 3.13.2",
       "NUnit3TestAdapter >= 4.0.0",
@@ -12097,7 +12074,12 @@
       "Selenium.WebDriver.ChromeDriver >= 91.0.4472.10100",
       "Selenium.WebDriver.GeckoDriver >= 0.29.1",
       "SpecFlow >= 3.9.8",
-      "SpecFlow.NUnit >= 3.9.8"
+      "SpecFlow.NUnit >= 3.9.8",
+      "System.Threading >= 4.3.0",
+      "System.Threading.Tasks >= 4.3.0",
+      "System.Threading.Tasks.Extensions >= 4.5.4",
+      "System.Threading.Thread >= 4.3.0",
+      "System.Threading.ThreadPool >= 4.3.0"
     ]
   },
   "packageFolders": {
@@ -12183,10 +12165,6 @@
             "target": "Package",
             "version": "[4.7.10, )"
           },
-          "NLog.Web": {
-            "target": "Package",
-            "version": "[4.12.0, )"
-          },
           "NLog.Web.AspNetCore": {
             "target": "Package",
             "version": "[4.12.0, )"
@@ -12226,6 +12204,26 @@
           "SpecFlow.NUnit": {
             "target": "Package",
             "version": "[3.9.8, )"
+          },
+          "System.Threading": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "System.Threading.Tasks": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "System.Threading.Tasks.Extensions": {
+            "target": "Package",
+            "version": "[4.5.4, )"
+          },
+          "System.Threading.Thread": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "System.Threading.ThreadPool": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           }
         },
         "imports": [
@@ -12246,17 +12244,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NLog.Web 4.12.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
-      "libraryId": "NLog.Web",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

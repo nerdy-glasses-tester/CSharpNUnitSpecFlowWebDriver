@@ -1,4 +1,5 @@
-﻿using BoDi;
+﻿using AventStack.ExtentReports;
+using BoDi;
 using CSharpNUnitSpecFlowWebDriver.Pages;
 using CSharpNUnitSpecFlowWebDriver.Utilities;
 using Ninject;
@@ -17,11 +18,13 @@ namespace CSharpNUnitSpecFlowWebDriver.StepDefinition
 
         HomePageSearch homePageSearch;
         FilterByBathPage filterByBathPage;
+        IWebDriver Driver;
 
         public FilterByBathPageSteps()
         {
             homePageSearch = new HomePageSearch();
             filterByBathPage = new FilterByBathPage();
+            Driver = SpecflowHooks.driver.Value;
         }
 
         [Given(@"I enter (.*) (.*) to search for rentals by bath in (.*) browser")]
@@ -32,18 +35,27 @@ namespace CSharpNUnitSpecFlowWebDriver.StepDefinition
             Assert.IsTrue(searchresultspg.CheckSearchResultsMatchKeyword(keyword), "Search results did not match keyword.");
         }
         
-        [Given(@"I click filter search results by bath and select (.*) to filter by")]
-        public void GivenIClickFilterSearchResultsByBathAndSelectToFilterBy(string bath)
+        [When(@"I click filter search results by bath and select (.*) to filter by in (.*) browser")]
+        public void WhenIClickFilterSearchResultsByBathAndSelectToFilterByInBrowser(string bath, string browser)
         {
             filterByBathPage.FilterByBath(bath);
         }
 
-        [Then(@"I should be able to see search results with at least mininum (.*) bath in the first two search results")]
-        public void ThenIShouldBeAbleToSeeSearchResultsWithAtLeastMininumNumberOfFilteredBathsInTheFirstTwoSearchResults(string bath)
+        [Then(@"I should be able to see search results with at least mininum (.*) bath in the first two search results in (.*) browser")]
+        public void ThenIShouldBeAbleToSeeSearchResultsWithAtLeastMininumNumberOfFilteredBathsInTheFirstTwoSearchResultsInBrowser(string bath, string browser)
         {
             Thread.Sleep(5000);
             bool isFiltered = filterByBathPage.VerifyIsFilterByBath(bath);
-            Assert.IsTrue(isFiltered, "Search results are not filtered by bath.");
+            try
+            {
+                Assert.IsTrue(isFiltered, "Search results are not filtered by bath.");
+            }
+            catch(Exception e)
+            {
+                SpecflowHooks.scenario.Log(Status.Fail, "Search results are not filtered by bath.");
+            }
+
+  
         }
 
 

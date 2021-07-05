@@ -19,7 +19,6 @@
           "NLog.Config": "4.7.10",
           "NLog.Extensions.Logging": "1.7.3",
           "NLog.Schema": "4.7.10",
-          "NLog.Web": "4.12.0",
           "NLog.Web.AspNetCore": "4.12.0",
           "NUnit": "3.13.2",
           "NUnit3TestAdapter": "4.0.0",
@@ -29,7 +28,12 @@
           "Selenium.WebDriver.ChromeDriver": "91.0.4472.10100",
           "Selenium.WebDriver.GeckoDriver": "0.29.1",
           "SpecFlow": "3.9.8",
-          "SpecFlow.NUnit": "3.9.8"
+          "SpecFlow.NUnit": "3.9.8",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.Threading.Thread": "4.3.0",
+          "System.Threading.ThreadPool": "4.3.0"
         },
         "runtime": {
           "CSharpNUnitSpecFlowWebDriver.dll": {}
@@ -379,7 +383,7 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.CompilerServices.Unsafe": "4.5.2",
           "System.Security.Cryptography.Cng": "4.5.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
+          "System.Threading.Tasks.Extensions": "4.5.4"
         }
       },
       "Microsoft.AspNetCore.Server.Kestrel.Https/2.2.0": {
@@ -558,7 +562,7 @@
           "System.Collections.Immutable": "1.6.0",
           "System.ComponentModel.Annotations": "4.6.0",
           "System.Diagnostics.DiagnosticSource": "4.6.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
+          "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {
@@ -1160,14 +1164,6 @@
         }
       },
       "NLog.Schema/4.7.10": {},
-      "NLog.Web/4.12.0": {
-        "runtime": {
-          "lib/net35/NLog.Web.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.12.0.1931"
-          }
-        }
-      },
       "NLog.Web.AspNetCore/4.12.0": {
         "dependencies": {
           "NLog.Extensions.Logging": "1.7.3"
@@ -2277,7 +2273,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.2": {},
+      "System.Threading.Tasks.Extensions/4.5.4": {},
       "System.Threading.Tasks.Parallel/4.3.0": {
         "dependencies": {
           "System.Collections.Concurrent": "4.3.0",
@@ -2329,7 +2325,7 @@
           "System.Text.Encoding.Extensions": "4.3.0",
           "System.Text.RegularExpressions": "4.3.0",
           "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
+          "System.Threading.Tasks.Extensions": "4.5.4"
         }
       },
       "System.Xml.XDocument/4.3.0": {
@@ -3123,13 +3119,6 @@
       "sha512": "sha512-SgsNWHO8rA/cVMMjuFNnuun0VlR+m79vuh5trIat43qtIw882vxCIJvgLNef7LtrePrF7r9TXIz4XOy5xjZ6tw==",
       "path": "nlog.schema/4.7.10",
       "hashPath": "nlog.schema.4.7.10.nupkg.sha512"
-    },
-    "NLog.Web/4.12.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-U4iRyJxmBtpUaPeoIEaehcT7CfeDzIRSr/y2YuVjREyc9/QzE21fW9cIZnsPHvf7Ys9OrlxsHcii2XBYYSxTQg==",
-      "path": "nlog.web/4.12.0",
-      "hashPath": "nlog.web.4.12.0.nupkg.sha512"
     },
     "NLog.Web.AspNetCore/4.12.0": {
       "type": "package",
@@ -4013,12 +4002,12 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "System.Threading.Tasks.Extensions/4.5.2": {
+    "System.Threading.Tasks.Extensions/4.5.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
-      "path": "system.threading.tasks.extensions/4.5.2",
-      "hashPath": "system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
     "System.Threading.Tasks.Parallel/4.3.0": {
       "type": "package",

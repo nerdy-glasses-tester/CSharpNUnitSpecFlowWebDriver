@@ -10,6 +10,7 @@ using NUnit.Framework;
 using TechTalk.SpecFlow;
 using BoDi;
 using CSharpNUnitSpecFlowWebDriver.Utilities;
+using OpenQA.Selenium.Remote;
 
 namespace CSharpNUnitSpecFlowWebDriver.Pages
 {
@@ -36,8 +37,8 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
         {
             SearchField.SendKeys(keyword);
             SearchBtn.Click();
-            Thread.Sleep(4000);
-            Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Search for " + $"{keyword}.");
+            Thread.Sleep(6000);
+            //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Search for " + $"{keyword}.");
             return new SearchResultsPage();
         }
 
@@ -45,13 +46,13 @@ namespace CSharpNUnitSpecFlowWebDriver.Pages
         {
             SearchField.SendKeys(place);
             SearchBtn.Click();
-            Thread.Sleep(3000);
-            Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Search for " + $"{place}.");
+            Thread.Sleep(6000);
+            //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Search for " + $"{place}.");
             Driver.Navigate().Refresh();
-            Thread.Sleep(3000);
+            Thread.Sleep(6000);
             if (SpecificPlaceLoaded.GetAttribute("innerHTML").Contains("12512 Brighton Pl"))
             {
-                Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Search Results Page Loaded.");
+                //Reporter.LogTestStepForBugLogger(AventStack.ExtentReports.Status.Info, "Search Results Page Loaded.");
             }
 
             return new SearchResultsPage();
