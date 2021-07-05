@@ -1,4 +1,5 @@
 I just finished Selenium WebDriver Masterclass with C# course and decided to practice. 
+Also big thanks to https://github.com/executeautomation/SeleniumWithSpecflow teacher for teaching Extent Reports with parallel testing.
 C# is similiar to Java. Using www.xome.com as a sample project, I created a Page Object Model based automation framework to run Selenium C# automation tests on Chrome and Firefox. 
 This uses NUnit, NLog, and Extent Reports. As of Jun 7 2021, the test suite has been updated and is passing.
 
