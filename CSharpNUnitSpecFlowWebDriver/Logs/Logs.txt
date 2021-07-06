@@ -1,0 +1,115 @@
+2021-07-05 17:40:42.6373 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:40:42.6564 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:40:42.6564 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:40:42.6564 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:40:42.6564 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:40:42.6564 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:41:27.8012 - 14 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.FilterByBath -     INFO: Filter by 3 baths. 
+2021-07-05 17:41:33.4126 - 14 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.VerifyIsFilterByBath -     INFO: Verified it filtered by baths. 
+2021-07-05 17:41:34.6087 - 13 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1740\FilterByBed( Irvine , CA , Chrome , 3 ,null).jpg 
+2021-07-05 17:41:37.5327 - 14 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1740\FilterByBed( Irvine , CA , Chrome , 3 ,null).jpg 
+2021-07-05 17:41:39.5305 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByPrice("Irvine","CA","Chrome","800000","1300000",null) 
+2021-07-05 17:41:39.5305 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:41:39.5305 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:41:39.5898 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:41:39.5898 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:41:39.8860 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBath("Irvine","CA","Chrome","3",null) 
+2021-07-05 17:41:39.8860 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:41:39.8860 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:41:39.8938 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:41:39.9214 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:41:40.3575 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBed("Irvine","CA","Chrome","3",null) 
+2021-07-05 17:41:40.3575 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:41:40.3575 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:41:40.3575 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:41:40.3575 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:42:36.9824 - 14 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.FilterByBath -     INFO: Filter by 3 baths. 
+2021-07-05 17:42:42.1659 - 14 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.VerifyIsFilterByBath -     INFO: Verified it filtered by baths. 
+2021-07-05 17:42:51.0832 - 13 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1740\FilterByBed( Irvine , CA , Firefox , 3 ,null).jpg 
+2021-07-05 17:42:52.2023 - 14 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1740\FilterByBed( Irvine , CA , Firefox , 3 ,null).jpg 
+2021-07-05 17:42:54.7135 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBath("Irvine","CA","Firefox","3",null) 
+2021-07-05 17:42:54.7135 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:42:54.7135 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:42:54.8190 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:42:54.8257 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBed("Irvine","CA","Firefox","3",null) 
+2021-07-05 17:42:54.8257 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:42:54.8257 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:42:54.8257 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:42:54.8495 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:42:54.8495 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:42:54.9228 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByPrice("Irvine","CA","Firefox","800000","1300000",null) 
+2021-07-05 17:42:54.9228 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:42:54.9228 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:42:54.9562 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:42:54.9562 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:43:33.2360 - 14 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.FilterByBath -     INFO: Filter by 3 baths. 
+2021-07-05 17:43:36.6765 - 13 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1740\FilterByBed( Irvine , CA , Edge , 3 ,null).jpg 
+2021-07-05 17:43:36.9689 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByPrice("Irvine","CA","Edge","800000","1300000",null) 
+2021-07-05 17:43:36.9689 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:43:36.9689 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:43:38.4050 - 14 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.VerifyIsFilterByBath -     INFO: Verified it filtered by baths. 
+2021-07-05 17:43:40.2137 - 14 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1740\FilterByBed( Irvine , CA , Edge , 3 ,null).jpg 
+2021-07-05 17:43:40.6800 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBath("Irvine","CA","Edge","3",null) 
+2021-07-05 17:43:40.6800 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:43:40.6800 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:43:40.9208 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBed("Irvine","CA","Edge","3",null) 
+2021-07-05 17:43:40.9208 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:43:40.9208 - 12 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:46:33.0330 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:46:33.0507 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:46:33.0507 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:46:33.0507 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:46:33.0507 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:46:33.0507 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:47:23.0518 - 15 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.FilterByBath -     INFO: Filter by 3 baths. 
+2021-07-05 17:47:26.0473 - 14 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1746\FilterByBed( Irvine , CA , Chrome , 3 ,null).jpg 
+2021-07-05 17:47:26.6319 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByPrice("Irvine","CA","Chrome","800000","1300000",null) 
+2021-07-05 17:47:26.6319 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:47:26.6319 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:47:26.6575 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:47:26.6821 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:47:28.1832 - 15 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.VerifyIsFilterByBath -     INFO: Verified it filtered by baths. 
+2021-07-05 17:47:31.3187 - 15 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1746\FilterByBed( Irvine , CA , Chrome , 3 ,null).jpg 
+2021-07-05 17:47:31.7328 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBath("Irvine","CA","Chrome","3",null) 
+2021-07-05 17:47:31.7328 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:47:31.7328 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:47:31.7328 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:47:31.7527 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:47:44.4210 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBed("Irvine","CA","Chrome","3",null) 
+2021-07-05 17:47:44.4210 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:47:44.4210 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:47:44.4210 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:47:44.4210 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:48:29.4163 - 14 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1746\FilterByBed( Irvine , CA , Firefox , 3 ,null).jpg 
+2021-07-05 17:48:29.8960 - 15 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.FilterByBath -     INFO: Filter by 3 baths. 
+2021-07-05 17:48:35.1071 - 15 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.VerifyIsFilterByBath -     INFO: Verified it filtered by baths. 
+2021-07-05 17:48:36.4300 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByPrice("Irvine","CA","Firefox","800000","1300000",null) 
+2021-07-05 17:48:36.4300 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:48:36.4300 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:48:36.4752 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:48:36.4752 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:48:40.2801 - 15 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1746\FilterByBed( Irvine , CA , Firefox , 3 ,null).jpg 
+2021-07-05 17:48:49.0009 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBath("Irvine","CA","Firefox","3",null) 
+2021-07-05 17:48:49.0009 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:48:49.0009 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:48:49.0874 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:48:49.0874 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:49:01.8810 - 13 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1746\FilterByPrice( Irvine , CA , Edge , 800000 , 1300000 ,null).jpg 
+2021-07-05 17:49:15.0475 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBed("Irvine","CA","Firefox","3",null) 
+2021-07-05 17:49:15.0475 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:49:15.0475 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:49:15.0730 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:49:15.0730 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.SetupBeforeEveryTestMethod -     INFO: *************************************** TEST STARTED 
+2021-07-05 17:49:30.8961 - 15 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.FilterByBath -     INFO: Filter by 3 baths. 
+2021-07-05 17:49:35.0592 - 14 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1746\FilterByBed( Irvine , CA , Edge , 3 ,null).jpg 
+2021-07-05 17:49:36.0794 - 15 - CSharpNUnitSpecFlowWebDriver.Pages.FilterByBathPage.VerifyIsFilterByBath -     INFO: Verified it filtered by baths. 
+2021-07-05 17:49:36.4944 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByPrice("Irvine","CA","Edge","800000","1300000",null) 
+2021-07-05 17:49:36.4944 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:49:36.4944 - 14 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:49:38.0031 - 15 - CSharpNUnitSpecFlowWebDriver.ScreenshotTaker.TakeScreenshotForInconclusive -     ERROR: Screenshot Of Error=>C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\reports\0705_1746\FilterByBed( Irvine , CA , Edge , 3 ,null).jpg 
+2021-07-05 17:49:39.1063 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBath("Irvine","CA","Edge","3",null) 
+2021-07-05 17:49:39.1067 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:49:39.1067 - 15 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:49:50.8275 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: FilterByBed("Irvine","CA","Edge","3",null) 
+2021-07-05 17:49:50.8275 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 
+2021-07-05 17:49:50.8275 - 13 - CSharpNUnitSpecFlowWebDriver.Utilities.SpecflowHooks.TearDownForEverySingleTestMethod -     INFO: *************************************** TEST STOPPED 

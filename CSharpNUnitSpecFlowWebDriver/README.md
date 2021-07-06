@@ -20,7 +20,7 @@ SpecFlow and SpecFlow.NUnit
 				name="default"
 				layout="${longdate} - ${threadid} - ${callsite:className=true:fileName=false:includeSourcePath=false:methodName=true} -
 				${level:uppercase=true}: ${message} ${onexception:${newline}EXCEPTION\: ${exception:format=ToString}}"
-				fileName="${basedir}\${appName}\Logs\Logs.txt"
+				fileName="C:\CSharpNUnitSpecFlowWebDriver\CSharpNUnitSpecFlowWebDriver\Logs\Logs.txt"
 				keepFileOpen="false"
 	   />
 	</targets>
